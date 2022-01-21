@@ -1,5 +1,8 @@
 ## Vue3 Snippet
 
+[![](https://vsmarketplacebadge.apphb.com/version/haotengfei.vvv.svg)](https://marketplace.visualstudio.com/items?itemName=haotengfei.vvv)
+[![](https://vsmarketplacebadge.apphb.com/installs/haotengfei.vvv.svg)](https://marketplace.visualstudio.com/items?itemName=haotengfei.vvv)
+
 ![](https://s3.bmp.ovh/imgs/2022/01/beffd3455700a88b.gif)
 
 
