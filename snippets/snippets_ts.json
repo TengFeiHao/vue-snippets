@@ -1,0 +1,73 @@
+{
+    "api接口定义模板": {
+        "prefix": "vvv_api",
+        "body": [
+            "/**",
+            " * @description ${1:接口描述}",
+            " * @param ${2:接口参数或文档地址}",
+            " */",
+            "export interface ${3:LoginSubmit} {",
+            "  ${4:userId: string // 用户id",
+            "  mobile?: string // 手机号",
+            "  passWord: string // 密码}",
+            "}",
+            "export const apiBuinessSubmit = (params: ${3:LoginSubmit}): Promise<AxiosPromise> =>",
+            "  request('${5:/iot-data/v1/api/health-home/equity/use/buiness/submit}', params, ${6:{}})",
+            ""
+        ],
+        "description": "Vue3+Ts-.api模板"
+    },
+    "路由文件模板": {
+        "prefix": "vvv_router",
+            "body": [
+              "/**",
+              " * @description ${1:接口描述} ",
+              " * @param {String} title meta document.title字段",
+              " */",
+              "",
+              " export const ${TM_FILENAME_BASE}Routes = [",
+              "  {",
+              "    path: '/${2:全小写 中划线连接，确保唯一}',",
+              "    name: '${2:全小写 中划线连接，确保唯一}',",
+              "    component: () => import('@/${3:staff/view/pageView/PageView.vue}'),",
+              "    meta: { title: '${4:title名字}' },",
+              "    ${5:children: []}",
+              "  }",
+              "]",
+              ""
+            ],
+        "description": "新建路由文件用这个"
+    },
+    "子路由模板": {
+        "prefix": "vvv_router_item",
+            "body": [
+              "{",
+              "  path: '/${1:全小写 中划线连接，确保唯一}',",
+              "  name: '${1:全小写 中划线连接，确保唯一}',",
+              "  component: () => import('@/${2:staff/view/pageView/PageView.vue}'),",
+              "  meta: { title: '${3:title名字}' },",
+              "  ${4:children: []}",
+              "}"
+            ],
+        "description": "子路由模板"
+    },
+    "store module 模板": {
+        "prefix": "vvv_store_module",
+        "body": [
+          "/**",
+          " * @description ${1:store module 描述}",
+          " */",
+          "const ${TM_FILENAME_BASE} = {",
+          "  namespaced: true,",
+          "  state: {},",
+          "  actions: {},",
+          "  mutations: {},",
+          "  getters: {}",
+          "}",
+          "",
+          "export default ${TM_FILENAME_BASE}",
+          ""
+        ],
+        "description": "store module 模板"
+      }
+}
