@@ -6,7 +6,7 @@
 	"icon": "img/logo.png",
 	"description": "Vue3 Snippet",
 	"license": "MIT",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.5.0"
 	},
