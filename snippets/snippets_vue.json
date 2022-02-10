@@ -55,7 +55,7 @@
               "  components: {},",
               "  props: {},",
               "  emits: [],",
-              "  setup(_props, _contxt) {",
+              "  setup(props, contxt) {",
               "    const store = useStore()",
               "    const route = useRoute()",
               "    const router = useRouter()",
